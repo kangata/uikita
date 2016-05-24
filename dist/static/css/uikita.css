@@ -1,0 +1,93 @@
+.uk-layout--md-drawer {
+	background: #ECEFF1;
+	padding: 20px;
+}
+
+/*
+|--------------------------------------------------
+| Button
+|--------------------------------------------------
+| .uk-button.uk-button--md-primary
+*/
+.uk-button--md-primary, .uk-button--md-primary:hover, .uk-button--md-primary:focus {
+	background: #2196F3;
+	color: #FAFAFA;
+}
+
+/*
+|--------------------------------------------------
+| Card
+|--------------------------------------------------
+| .uk-panel.uk-panel--md-card
+*/
+.uk-panel--md-card {
+	background: #FAFAFA;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+	padding: 15px;
+}
+
+/*
+|--------------------------------------------------
+| List
+|--------------------------------------------------
+| .uk-list > li.uk-list--md-item
+*/
+.uk-list--md-item {
+	padding: 5px 20px;
+}
+
+.uk-list--md-item-icon {
+	background: #FAFAFA;
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	float: left;
+}
+
+.uk-list--md-item-icon::before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.uk-list--md-item-icon > span {
+	display: inline-block;
+	vertical-align: middle;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+.uk-list--md-item-content {
+	margin-left: 70px;
+	height: 50px;
+}
+
+.uk-list--md-item-content > h3 {
+	margin-bottom: 5px; 
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+.uk-list--md-item-content > span {
+	margin: 0;
+	font-size: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}

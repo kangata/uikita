@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>UI Kita</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.min.css">
+		<link rel="stylesheet" href="../dist/static/css/uikita.css">
+	</head>
+	<body>
+		<uk-list-icon :lists="lists"></uk-list-icon>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.min.js"></script>
+		<script src="../dist/static/js/manifest.min.js"></script>
+		<script src="../dist/static/js/uikita.min.js"></script>
+		<script>
+			var UkListIcon = UIKita.UkListIcon
+
+			var lists = [
+				{
+					key: 0,
+					icon: 'A',
+					title: 'Adi',
+					meta: 'AKDAS'
+				},
+				{
+					key: 1,
+					icon: 'A',
+					title: 'Anhal',
+					meta: 'AKDAS'
+				},
+				{
+					key: 2,
+					icon: 'A',
+					title: 'Ata',
+					meta: 'AKDAS'
+				},
+				{
+					key: 3,
+					icon: 'E',
+					title: 'Eka',
+					meta: 'SPARK'
+				},
+				{
+					key: 4,
+					icon: 'J',
+					title: 'Jendi',
+					meta: 'SPARK'
+				},
+				{
+					key: 5,
+					icon: 'I',
+					title: 'Indra',
+					meta: 'SPARK'
+				},
+				{
+					key: 6,
+					icon: 'M',
+					title: 'Mail',
+					meta: 'AKDAS'
+				},
+				{
+					key: 7,
+					icon: 'R',
+					title: 'Ridwan',
+					meta: 'AKDAS'
+				}
+			]
+
+			new Vue({
+				el: 'body',
+				data: {
+					lists: lists
+				},
+				components: {
+					UkListIcon
+				},
+				events: {
+					itemOnClick: function(key) {
+						console.log('Hello ' + lists[key].title + '!!')
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
